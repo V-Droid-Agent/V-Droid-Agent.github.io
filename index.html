@@ -11,13 +11,13 @@
     href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
   />
 
-  <!-- Animate.css for animations -->
+  <!-- Animate.css for subtle animations (optional) -->
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
 
-  <!-- Custom Fonts (Google Fonts) -->
+  <!-- Google Fonts -->
   <link
     href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap"
     rel="stylesheet"
@@ -28,143 +28,145 @@
 </head>
 <body>
 
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
-    <div class="container">
-      <a class="navbar-brand" href="#">
-        <span class="brand-text">V-Droid</span>
-      </a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarNav"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse text-right" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item mx-2">
-            <a class="nav-link" href="#features">Features</a>
-          </li>
-          <li class="nav-item mx-2">
-            <a class="nav-link" href="#about">About</a>
-          </li>
-          <li class="nav-item mx-2">
-            <a class="nav-link" href="#contact">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Hero Section -->
-  <header class="hero-section d-flex align-items-center">
-    <div class="container text-center text-white animate__animated animate__fadeIn">
-      <div class="row">
-        <div class="col-md-6 d-flex flex-column justify-content-center">
-          <h1 class="hero-title">Advancing Mobile GUI Agents</h1>
-          <p class="hero-subtitle">
-            A Verifier-Driven Approach to Practical Deployment
-          </p>
-          <a href="#features" class="btn btn-primary btn-neon mt-4">
-            Learn More
-          </a>
-        </div>
-        <div class="col-md-6 text-center mt-4 mt-md-0">
-          <img
-            src="assets/images/robot.jpeg"
-            alt="V-Droid Robot"
-            class="img-fluid robot-image"
-          />
-        </div>
-      </div>
+  <header id="hero" class="hero-section d-flex align-items-center justify-content-center">
+    <div class="hero-content text-center text-white animate__animated animate__fadeIn">
+      <h1 class="hero-title">
+        Advancing Mobile GUI Agents: <br />
+        A Verifier-Driven Approach to Practical Deployment
+      </h1>
+      <p class="hero-authors mt-3">
+        Gaole Dai<sup>1</sup>, Shiqi Jiang<sup>2</sup>, Ting Cao<sup>2</sup>, 
+        Yuanchun Li<sup>3</sup>, Yuqing Yang<sup>2</sup>, Rui Tan<sup>1</sup>, 
+        Mo Li<sup>4</sup>, Lili Qiu<sup>2</sup>
+      </p>
+      <p class="hero-affiliations">
+        <sup>1</sup>Nanyang Technological University <br />
+        <sup>2</sup>Microsoft Research <br />
+        <sup>3</sup>Institute for AI Industry Research (AIR), Tsinghua University <br />
+        <sup>4</sup>Hong Kong University of Science and Technology
+      </p>
     </div>
   </header>
 
-  <!-- Features Section -->
-  <section id="features" class="py-5 bg-dark text-white">
+  <!-- Abstract Section -->
+  <section id="abstract" class="py-5">
     <div class="container">
-      <h2 class="text-center mb-4 section-title">Key Features</h2>
+      <!-- Center the "Abstract" heading -->
+      <h2 class="text-center mb-4 section-title">Abstract</h2>
+  
+      <!-- Center the container but justify the text within -->
+      <div class="mx-auto" style="max-width: 1500px; text-align: justify;">
+        <p>
+          Introducing V-Droid – the first mobile GUI agent with near-real-time, high-quality decision making ability.
+          Unlike traditional agents that rely on large language models (LLMs) to generate actions at
+          every step, V-Droid employes LLMs as verifiers evaluating candidate actions to ensure optimal decision-making.
+        </p>
+        <p><strong>V-Droid features:</strong></p>
+        <p> 1. <strong>Discretized Action Space &amp; Prefilling-Only Workflow:</strong> Accelerates decision-making by verifying candidate actions in parallel using prefix caching. </p> 
+        <p> 2. <strong>Pair-Wise Progress Preference Training:</strong> Enhances the verifier’s decision-making and self-correction capabilities through progress-aware training. </p> 
+        <p> 3. <strong>Scalable Human-Agent Joint Annotation:</strong> V-Droid quickly takes the lead role in the annotation process after just two training rounds, significantly reducing overhead while boosting performance. </p>
+        <p>
+          V-Droid has set new benchmarks in mobile tasks automation, achieving
+          state-of-the-art task success rates of 59.5% on AndroidWorld, 38.3% on
+          AndroidLab, and 49% on MobileAgentBench, outperforming existing agents by
+          9.5%, 2.1%, and 9%, respectively. Furthermore, V-Droid achieves an low latency of 0.7 seconds per decision,
+          which is 32.8X faster than existing agents.
+        </p>
+      </div>
+
+      <!-- Figure -->
+      <figure class="text-center my-4">
+        <img src="assets/images/generator_vs_verifier-crop.png" alt="Diagram of V-Droid Architecture" class="img-fluid" style="max-width: 75%; height: auto;">
+        <figcaption class="mt-2">V-Droid: the first verifier-driven mobile GUI agent</figcaption>
+      </figure>
+    </div>
+  </section>
+  
+  <section id="video-demo" class="py-5 bg-dark text-white">
+    <div class="container">
+      <h2 class="text-center mb-4 section-title">Video Demo (No Acceleration)</h2>
       <div class="row">
+        <!-- Video 1 -->
         <div class="col-md-4 mb-4">
-          <div class="feature-box p-4 text-center h-100">
-            <h3 class="feature-title">Feature One</h3>
-            <p>Short description of the feature goes here.</p>
-          </div>
+          <video class="video-fluid" controls>
+            <source src="assets/videos/Delete.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <h5 class="video-title text-center mt-2">Delete the recipes from Broccoli app: Chicken Alfredo Pasta, Tomato Basil Bruschetta, Grilled Cheese with Tomato and Basil.</h5>
         </div>
+        <!-- Video 2 -->
         <div class="col-md-4 mb-4">
-          <div class="feature-box p-4 text-center h-100">
-            <h3 class="feature-title">Feature Two</h3>
-            <p>Short description of the feature goes here.</p>
-          </div>
+          <video class="video-fluid" controls>
+            <source src="assets/videos/OpenWifi.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <h5 class="video-title text-center mt-2">Open WiFi for me.</h5>
         </div>
+        <!-- Video 3 -->
         <div class="col-md-4 mb-4">
-          <div class="feature-box p-4 text-center h-100">
-            <h3 class="feature-title">Feature Three</h3>
-            <p>Short description of the feature goes here.</p>
-          </div>
+          <video class="video-fluid" controls>
+            <source src="assets/videos/Send.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <h5 class="video-title text-center mt-2">Send a text message to +16597910719 with message: Beauty is in the eye of the beholder</h5>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="about" class="py-5">
-    <div class="container">
-      <h2 class="text-center mb-4 section-title">About V-Droid</h2>
-      <p class="lead text-center mx-auto" style="max-width: 700px;">
-        V-Droid is an innovative framework designed to push the boundaries of
-        mobile GUI agents. Our verifier-driven approach ensures robust and
-        scalable solutions for real-world deployments.
-      </p>
-    </div>
-  </section>
 
-  <section id="contact" class="py-5 bg-dark text-white">
+<!-- Experiment Results Section -->
+<section id="experiment-results" class="py-5">
     <div class="container">
-      <h2 class="text-center mb-4 section-title">Get in Touch</h2>
-      <p class="text-center mx-auto mb-5" style="max-width: 600px;">
-        Interested in V-Droid? Questions or feedback? Reach out to us!
-      </p>
-      <div class="row justify-content-center">
+      <h2 class="text-center mb-4 section-title">Experiment Results</h2>
+      
+      <!-- Success Rate Figures -->
+      <div class="row text-center mb-4">
+        <div class="col-md-4" style="overflow: auto;">
+            <h4>AndroidWorld (+9.5%)</h4>
+            <img src="assets/images/sr_android_world-crop.png" alt="AndroidWorld" class="img-fluid">
+        </div>          
+        <div class="col-md-4" style="overflow: auto;">
+            <h4>AndroidLab (+2.1%)</h4>
+            <img src="assets/images/sr_android_lab-crop.png" alt="AndroidLab" class="img-fluid">
+        </div>
+        <div class="col-md-4" style="overflow: auto;">
+            <h4>MobileAgentBench (+9.0%)</h4>
+            <img src="assets/images/sr_mobile_agent-crop.png" alt="MobileAgentBench" class="img-fluid">
+        </div>
+      </div>
+      
+      <!-- Latency Figures -->
+      <div class="row text-center">
         <div class="col-md-6">
-          <form>
-            <div class="form-group">
-              <label for="name">Name</label>
-              <input
-                type="text"
-                class="form-control"
-                id="name"
-                placeholder="Gaole DAI"
-              />
-            </div>
-            <div class="form-group">
-              <label for="email">Email address</label>
-              <input
-                type="email"
-                class="form-control"
-                id="email"
-                placeholder="gaole001@e.ntu.edu.sg"
-              />
-            </div>
-            <div class="form-group">
-              <label for="message">Message</label>
-              <textarea
-                class="form-control"
-                id="message"
-                rows="4"
-                placeholder="Enter your message"
-              ></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary btn-neon">
-              Submit
-            </button>
-          </form>
+          <h4>Decision Making Latency (32.8X faster)</h4>
+          <img src="assets/images/decision-making_latency-crop.png" alt="MobileAgentBench" class="img-fluid">
+        </div>
+        <div class="col-md-6">
+          <h4>Step-wise Latency (6.8X faster)</h4>
+          <img src="assets/images/step_wise_latency-crop.png" alt="MobileAgentBench" class="img-fluid">
         </div>
       </div>
     </div>
   </section>
+  
+  
+
+  <!-- Citation Section -->
+<section id="citation" class="py-5 bg-dark text-white">
+    <div class="container">
+      <h2 class="text-center mb-4 section-title">Citation</h2>
+      <pre class="citation-block mx-auto" style="max-width: 1500px; background-color: #2a2a2a; padding: 15px; border-radius: 5px; overflow-x: auto; color: #fff;">
+  @article{dai2025advancing,
+    title={Advancing Mobile GUI Agents: A Verifier-Driven Approach to Practical Deployment},
+    author={Dai, Gaole and Jiang, Shiqi and Cao, Ting and Li, Yuanchun and Yang, Yuqing and Tan, Rui and Li, Mo and Qiu, Lili},
+    journal={arXiv preprint arXiv:2503.15937},
+    year={2025}
+  }
+      </pre>
+    </div>
+  </section>
+
 
   <!-- Footer -->
   <footer class="py-3 bg-dark text-center text-white">
@@ -175,9 +177,45 @@
     </div>
   </footer>
 
+  <!-- jQuery and Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"
   ></script>
+
+  <!-- Canvas Animation Script -->
+  <script>
+    const canvas = document.getElementById('backgroundCanvas');
+    const ctx = canvas.getContext('2d');
+
+    function resizeCanvas() {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    }
+    window.addEventListener('resize', resizeCanvas);
+    resizeCanvas();
+
+    let hue = 0;
+    function animate() {
+      hue += 0.3;
+      // Create a radial gradient that shifts color over time
+      const gradient = ctx.createRadialGradient(
+        canvas.width / 2, 
+        canvas.height / 2, 
+        0, 
+        canvas.width / 2, 
+        canvas.height / 2, 
+        canvas.width
+      );
+      gradient.addColorStop(0, `hsl(${hue % 360}, 80%, 50%)`);
+      gradient.addColorStop(1, `hsl(${(hue + 60) % 360}, 80%, 50%)`);
+
+      ctx.fillStyle = gradient;
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+      requestAnimationFrame(animate);
+    }
+    animate();
+  </script>
 </body>
 </html>

@@ -14,7 +14,7 @@ body {
   
   /* Hero Section */
   .hero-section {
-    min-height: 80vh;
+    min-height: 60vh;
     background: linear-gradient(135deg, #913fe2 0%, #ff8f70 100%);
     /* Purple -> Orange gradient (tweak to your taste) */
     position: relative;
@@ -22,7 +22,7 @@ body {
   }
   
   .hero-title {
-    font-size: 3rem;
+    font-size: 3.5rem;
     font-weight: 600;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
   }
@@ -32,6 +32,12 @@ body {
     margin-top: 1rem;
   }
   
+  .hero-authors,
+  .hero-affiliations {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    }
+
   .robot-image {
     max-width: 80%;
     height: auto;
@@ -64,13 +70,13 @@ body {
   }
   
   .section-title::after {
-    content: '';
+    /* content: '';
     position: absolute;
     width: 50%;
     height: 3px;
     background-color: #ff8f70;
     bottom: 0;
-    left: 25%;
+    left: 25%; */
   }
   
   /* Feature Boxes */
@@ -107,5 +113,12 @@ body {
   footer p {
     margin: 0;
     font-size: 0.9rem;
+  }
+  
+  .video-fluid {
+    width: 100%;      /* Occupy full width of the parent column */
+    height: auto;     /* Maintain aspect ratio */
+    display: block;   /* Remove any default inline spacing */
+    background-color: #000; /* Optional: helps show black bars for vertical videos */
   }
   
