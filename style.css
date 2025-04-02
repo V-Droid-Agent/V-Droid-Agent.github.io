@@ -1,0 +1,111 @@
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #121212; /* Dark background */
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar-brand .brand-text {
+    font-weight: 600;
+    font-size: 1.25rem;
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    min-height: 80vh;
+    background: linear-gradient(135deg, #913fe2 0%, #ff8f70 100%);
+    /* Purple -> Orange gradient (tweak to your taste) */
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .hero-title {
+    font-size: 3rem;
+    font-weight: 600;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  }
+  
+  .hero-subtitle {
+    font-size: 1.25rem;
+    margin-top: 1rem;
+  }
+  
+  .robot-image {
+    max-width: 80%;
+    height: auto;
+    filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.2));
+  }
+  
+  /* Neon Button */
+  .btn-neon {
+    position: relative;
+    color: #fff;
+    background-color: #ff6b80; /* Pinkish button color */
+    border: none;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-neon:hover {
+    box-shadow: 0 0 15px rgba(255, 107, 128, 0.6),
+                0 0 30px rgba(255, 107, 128, 0.4);
+    transform: translateY(-2px);
+  }
+  
+  /* Section Titles */
+  .section-title {
+    font-size: 2rem;
+    font-weight: 600;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+    margin-bottom: 2rem;
+  }
+  
+  .section-title::after {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 3px;
+    background-color: #ff8f70;
+    bottom: 0;
+    left: 25%;
+  }
+  
+  /* Feature Boxes */
+  .feature-box {
+    background-color: #1f1f1f;
+    border-radius: 8px;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .feature-box:hover {
+    box-shadow: 0 0 15px rgba(255, 143, 112, 0.4);
+  }
+  
+  .feature-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  
+  /* Contact Form */
+  .form-control {
+    background-color: #2a2a2a;
+    color: #fff;
+    border: 1px solid #444;
+  }
+  
+  .form-control:focus {
+    background-color: #333;
+    border-color: #ff8f70;
+    box-shadow: 0 0 5px rgba(255, 143, 112, 0.5);
+  }
+  
+  /* Footer */
+  footer p {
+    margin: 0;
+    font-size: 0.9rem;
+  }
+  
