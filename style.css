@@ -16,13 +16,13 @@ body {
   .hero-section {
     min-height: 60vh;
     background: linear-gradient(135deg, #913fe2 0%, #ff8f70 100%);
-    /* Purple -> Orange gradient (tweak to your taste) */
+    display: flex;
     position: relative;
     overflow: hidden;
   }
   
   .hero-title {
-    font-size: 3.5rem;
+    font-size: 3.rem;
     font-weight: 600;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
   }
