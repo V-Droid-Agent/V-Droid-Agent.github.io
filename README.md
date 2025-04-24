@@ -16,7 +16,8 @@
   <img src="https://img.shields.io/badge/arXiv-2503.15937-red" alt="Paper PDF">
 </a>
 <a href="https://v-droid-agent.github.io">
-  <img src="https://img.shields.io/badge/Project_Page-V-Droid-green" alt="Project Page">
+  <img src="https://img.shields.io/badge/Project%20Page-V--Droid-green"
+       alt="Project Page">
 </a>
 <a href="https://github.com/V-Droid-Agent/V-Droid-Agent.github.io">
   <img src="https://img.shields.io/badge/Code-GitHub-blue" alt="Code Repo">
