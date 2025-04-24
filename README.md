@@ -26,7 +26,7 @@
 
 
 ## Overview
-Introducing V-Droid – the first mobile GUI agent with near-real-time, high-quality decision making ability. Unlike traditional agents that rely on large language models (LLMs) to generate actions at every step, V-Droid employes LLMs as verifiers evaluating candidate actions to ensure optimal decision-making.
+Introducing V-Droid – the first mobile GUI agent with near-real-time, high-quality decision making ability. Unlike traditional agents that rely on large language models (LLMs) to generate actions at every step, V-Droid employes LLMs as verifiers evaluating candidate actions to ensure high-quality decision-making.
 
 V-Droid features:
 
@@ -40,7 +40,7 @@ V-Droid has set new benchmarks in mobile tasks automation, achieving state-of-th
 
 
 ## Code & Weights
-The complete codebase and pretrained weights will be released shortly—stay tuned!
+The complete codebase and model weights will be released shortly—stay tuned!
 
 
 ## Citation
