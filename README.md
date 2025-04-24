@@ -39,8 +39,13 @@ V-Droid features:
 V-Droid has set new benchmarks in mobile tasks automation, achieving state-of-the-art task success rates of 59.5% on AndroidWorld, 38.3% on AndroidLab, and 49% on MobileAgentBench, outperforming existing agents by 9.5%, 2.1%, and 9%, respectively. Furthermore, V-Droid achieves an low latency of 0.7 seconds per decision, which is 32.8X faster than existing agents.
 
 
+## Code & Weights
+The complete codebase and pretrained weights will be released shortly—stay tuned!
+
 
 ## Citation
+If you use this work, please cite:
+
 ```bibtex
 @article{dai2025advancing,
   title={Advancing Mobile GUI Agents: A Verifier-Driven Approach to Practical Deployment},
