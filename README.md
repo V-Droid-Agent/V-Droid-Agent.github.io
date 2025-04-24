@@ -17,7 +17,7 @@
 <a href="https://arxiv.org/abs/2503.15937">
   <img src="https://img.shields.io/badge/arXiv-2503.15937-red" alt="Paper PDF">
 </a>
-<a href="https://v-droid-gui.github.io/">
+<a href="[https://v-droid-gui.github.io](https://v-droid-agent.github.io/)/">
   <img src="https://img.shields.io/badge/Project_Page-V-Droid-green" alt="Project Page">
 </a>
 <a href="https://github.com/v-droid-gui/V-Droid">
