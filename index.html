@@ -1,221 +1,400 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>V-Droid</title>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+    <!-- Replace the content tag with appropriate information -->
+    <meta
+      name="description"
+      content=" V-Droid: Advancing Mobile GUI Agent Through Generative Verifiers"
+    />
+    <meta
+      property="og:title"
+      content="V-Droid: Advancing Mobile GUI Agent Through Generative Verifiers"
+    />
+    <meta
+      property="og:description"
+      content="V-Droid: Advancing Mobile GUI Agent Through Generative Verifiers"
+    />
+    <meta property="og:url" content="URL OF THE WEBSITE" />
+    <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+    <meta property="og:image" content="static/image/your_banner_image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
 
-  <!-- Bootstrap CSS -->
-  <link
-    rel="stylesheet"
-    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-  />
+    <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG" />
+    <meta
+      name="twitter:description"
+      content="TWITTER BANNER DESCRIPTION META TAG"
+    />
+    <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+    <meta
+      name="twitter:image"
+      content="static/images/your_twitter_banner_image.png"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <!-- Keywords for your paper to be indexed by-->
+    <meta name="keywords" content="V-Droid" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <!-- Animate.css for subtle animations (optional) -->
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+    <title>
+      V-Droid: Advancing Mobile GUI Agent Through Generative Verifiers
+    </title>
+    <!-- <link rel="icon" type="image/x-icon" href="static/images/favicon.ico" /> -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+      rel="stylesheet"
+    />
 
-  <!-- Google Fonts -->
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap"
-    rel="stylesheet"
-  />
+    <link rel="stylesheet" href="static/css/bulma.min.css" />
+    <link rel="stylesheet" href="static/css/bulma-carousel.min.css" />
+    <link rel="stylesheet" href="static/css/bulma-slider.min.css" />
+    <link rel="stylesheet" href="static/css/fontawesome.all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css"
+    />
+    <link rel="stylesheet" href="static/css/index.css" />
 
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+    <script defer src="static/js/fontawesome.all.min.js"></script>
+    <script src="static/js/bulma-carousel.min.js"></script>
+    <script src="static/js/bulma-slider.min.js"></script>
+    <script src="static/js/index.js"></script>
+  </head>
+  <body>
+    <section class="hero">
+      <div class="hero-body">
+        <div class="container is-max-desktop">
+          <div class="columns is-centered">
+            <div class="column has-text-centered">
+              <h1 class="title is-1 publication-title">
+                V-Droid: Advancing Mobile GUI Agent Through Generative Verifiers
+              </h1>
+              <div class="is-size-5 publication-authors">
+                <!-- Paper authors -->
+                <span class="author-block">Gaole Dai<sup>1 *</sup>,</span>
+                <span class="author-block">Shiqi Jiang<sup>2</sup>,</span>
+                <span class="author-block">Ting Cao<sup>2</sup>,</span>
+                <span class="author-block">Yuanchun Li<sup>3</sup>,</span>
+                <span class="author-block">Yuqing Yang<sup>2</sup>,</span>
+                <span class="author-block">Rui Tan<sup>1</sup>,</span>
+                <span class="author-block">Mo Li<sup>4</sup>,</span>
+                <span class="author-block">Lili Qiu<sup>2</sup></span>
+              </div>
 
-  <header id="hero" class="hero-section d-flex align-items-center justify-content-center">
-    <div class="hero-content text-center text-white animate__animated animate__fadeIn">
-      <h1 class="hero-title">
-        Advancing Mobile GUI Agents: <br />
-        A Verifier-Driven Approach to Practical Deployment
-      </h1>
-      <p class="hero-authors mt-3">
-        Gaole Dai<sup>2</sup>, Shiqi Jiang<sup>1</sup>, Ting Cao<sup>1</sup>, 
-        Yuanchun Li<sup>3</sup>, Yuqing Yang<sup>1</sup>, Rui Tan<sup>2</sup>, 
-        Mo Li<sup>4</sup>, Lili Qiu<sup>1</sup>
-      </p>
-      <p class="hero-affiliations">
-        <sup>1</sup>Microsoft Research <br />
-        <sup>2</sup>Nanyang Technological University <br />
-        <sup>3</sup>Institute for AI Industry Research (AIR), Tsinghua University <br />
-        <sup>4</sup>Hong Kong University of Science and Technology
-      </p>
-    </div>
-  </header>
+              <div class="is-size-5 publication-authors">
+                <span class="author-block"
+                  ><sup>1</sup> Nanyang Technological University &nbsp;</span
+                >
+                <span class="author-block"
+                  ><sup>2</sup> Microsoft Research &nbsp;</span
+                >
+                <span class="author-block"
+                  ><sup>3</sup> Tsinghua University &nbsp;</span
+                >
+                <span class="author-block"
+                  ><sup>3</sup> Hong Kong University of Science and Technology
+                  &nbsp;</span
+                >
+                <span class="eql-cntrb"
+                  ><small
+                    ><br /><sup>*</sup>The work is done during internship at
+                    Microsoft Research.</small
+                  ></span
+                >
+              </div>
 
-  <!-- Abstract Section -->
-  <section id="abstract" class="py-5">
-    <div class="container">
-      <!-- Center the "Abstract" heading -->
-      <h2 class="text-center mb-4 section-title">Abstract</h2>
-  
-      <!-- Center the container but justify the text within -->
-      <div class="mx-auto" style="max-width: 1500px; text-align: justify;">
-        <p>
-          Introducing V-Droid – the first mobile GUI agent with near-real-time, high-quality decision making ability.
-          Unlike traditional agents that rely on large language models (LLMs) to generate actions at
-          every step, V-Droid employes LLMs as verifiers evaluating candidate actions to ensure optimal decision-making.
-        </p>
-        <p><strong>V-Droid features:</strong></p>
-        <p> 1. <strong>Discretized Action Space &amp; Prefilling-Only Workflow:</strong> Accelerates decision-making by verifying candidate actions in parallel using prefix caching. </p> 
-        <p> 2. <strong>Pair-Wise Progress Preference Training:</strong> Enhances the verifier’s decision-making and self-correction capabilities through progress-aware training. </p> 
-        <p> 3. <strong>Scalable Human-Agent Joint Annotation:</strong> V-Droid quickly takes the lead role in the annotation process after just two training rounds, significantly reducing overhead while boosting performance. </p>
-        <p>
-          V-Droid has set new benchmarks in mobile tasks automation, achieving
-          state-of-the-art task success rates of 59.5% on AndroidWorld, 38.3% on
-          AndroidLab, and 49% on MobileAgentBench, outperforming existing agents by
-          9.5%, 2.1%, and 9%, respectively. Furthermore, V-Droid achieves an low latency of 0.7 seconds per decision,
-          which is 32.8X faster than existing agents.
-        </p>
+              <div class="column has-text-centered">
+                <div class="publication-links">
+                  <!-- Arxiv PDF link -->
+                  <span class="link-block">
+                    <a
+                      href="https://arxiv.org/pdf/2503.15937"
+                      target="_blank"
+                      class="external-link button is-normal is-rounded is-dark"
+                    >
+                      <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                      </span>
+                      <span>Paper</span>
+                    </a>
+                  </span>
+
+                  <!-- Supplementary PDF link -->
+                  <!-- <span class="link-block">
+                    <a
+                      href="static/pdfs/supplementary_material.pdf"
+                      target="_blank"
+                      class="external-link button is-normal is-rounded is-dark"
+                    >
+                      <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                      </span>
+                      <span>Supplementary</span>
+                    </a>
+                  </span> -->
+
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a
+                      href="https://github.com/V-Droid-Agent/V-Droid-Public"
+                      target="_blank"
+                      class="external-link button is-normal is-rounded is-dark"
+                    >
+                      <span class="icon">
+                        <i class="fab fa-github"></i>
+                      </span>
+                      <span>Code</span>
+                    </a>
+                  </span>
+
+                  <!-- ArXiv abstract Link -->
+                  <span class="link-block">
+                    <a
+                      href="https://arxiv.org/abs/2503.15937"
+                      target="_blank"
+                      class="external-link button is-normal is-rounded is-dark"
+                    >
+                      <span class="icon">
+                        <i class="ai ai-arxiv"></i>
+                      </span>
+                      <span>arXiv</span>
+                    </a>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+    </section>
 
-      <!-- Figure -->
-      <figure class="text-center my-4">
-        <img src="assets/images/image.png" alt="Diagram of V-Droid Architecture" class="img-fluid" style="max-width: 75%; height: auto;">
-        <figcaption class="mt-2">V-Droid: the first verifier-driven mobile GUI agent</figcaption>
-      </figure>
-    </div>
-  </section>
-  
-  <section id="video-demo" class="py-5 bg-dark text-white">
-    <div class="container">
-      <h2 class="text-center mb-4 section-title">Video Demo (No Acceleration)</h2>
-      <div class="row">
-        <!-- Video 1 -->
-        <div class="col-md-4 mb-4">
-          <video class="video-fluid" controls>
-            <source src="assets/videos/Delete.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-          <h5 class="video-title text-center mt-2">Delete the recipes from Broccoli app: Chicken Alfredo Pasta, Tomato Basil Bruschetta, Grilled Cheese with Tomato and Basil.</h5>
-        </div>
-        <!-- Video 2 -->
-        <div class="col-md-4 mb-4">
-          <video class="video-fluid" controls>
-            <source src="assets/videos/OpenWifi.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-          <h5 class="video-title text-center mt-2">Open WiFi for me.</h5>
-        </div>
-        <!-- Video 3 -->
-        <div class="col-md-4 mb-4">
-          <video class="video-fluid" controls>
-            <source src="assets/videos/Send.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-          <h5 class="video-title text-center mt-2">Send a text message to +16597910719 with message: Beauty is in the eye of the beholder</h5>
+    <!-- Teaser video-->
+    <section class="hero teaser">
+      <div class="container is-max-desktop">
+        <div class="hero-body">
+          <!-- <video poster="" id="tree" autoplay controls muted loop height="100%">
+            <!-- Your video here -->
+          <!-- <source src="static/videos/banner_video.mp4" type="video/mp4" />
+          </video> -->
+          <img
+            src="static/images/generator_vs_verifier-crop.png"
+            alt="MY ALT TEXT"
+          />
+
+          <h2 class="subtitle has-text-centered">
+            We introduce V-Droid – the first mobile GUI agent with
+            near-real-time, high-quality decision making ability. Unlike
+            conventional agents that rely on large language models (LLMs) to
+            generate actions from scratch at every step, V-Droid employes LLMs
+            as verifiers evaluating candidate actions to ensure optimal
+            performance. We introduce a comprehensive design for the
+            verifier-driven GUI agent, comprising: (1) discretizing action space
+            with a prefilling-only workflow; (2) pairwise process preference
+            training to enhance the verifier’s decision-making and
+            self-correction abilities; and (3) scalable human-agent joint
+            annotation.
+          </h2>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+    <!-- End teaser video -->
 
-
-<!-- Experiment Results Section -->
-<section id="experiment-results" class="py-5">
-    <div class="container">
-      <h2 class="text-center mb-4 section-title">Experiment Results</h2>
-      
-      <!-- Success Rate Figures -->
-      <div class="row text-center mb-4">
-        <div class="col-md-4" style="overflow: auto;">
-            <h4>AndroidWorld (+9.5%)</h4>
-            <img src="assets/images/sr_android_world-crop.png" alt="AndroidWorld" class="img-fluid">
-        </div>          
-        <div class="col-md-4" style="overflow: auto;">
-            <h4>AndroidLab (+2.1%)</h4>
-            <img src="assets/images/sr_android_lab-crop.png" alt="AndroidLab" class="img-fluid">
-        </div>
-        <div class="col-md-4" style="overflow: auto;">
-            <h4>MobileAgentBench (+9.0%)</h4>
-            <img src="assets/images/sr_mobile_agent-crop.png" alt="MobileAgentBench" class="img-fluid">
+    <!-- Paper abstract -->
+    <section class="section hero is-light">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <h2 class="title is-3">Abstract</h2>
+            <div class="content has-text-justified">
+              <p>
+                We propose V-Droid, a mobile GUI task automation agent. Unlike
+                previous mobile agents that utilize Large Language Models (LLMs)
+                as generators to directly generate actions at each step, V-Droid
+                employs LLMs as verifiers to evaluate candidate actions before
+                making final decisions. To realize this novel paradigm, we
+                introduce a comprehensive framework for constructing
+                verifier-driven mobile agents: the discretized action space
+                construction coupled with the prefilling-only workflow to
+                accelerate the verification process, the pair-wise progress
+                preference training to significantly enhance the verifier's
+                decision-making capabilities, and the scalable human-agent joint
+                annotation scheme to efficiently collect the necessary data at
+                scale. V-Droid sets a new state-of-the-art task success rate
+                across several public mobile task automation benchmarks: 59.5%
+                on AndroidWorld, 38.3% on AndroidLab, and 49% on
+                MobileAgentBench, surpassing existing agents by 9.5%, 2.1%, and
+                9%, respectively. Furthermore, V-Droid achieves an impressively
+                low latency of 0.7 seconds per step, making it the first mobile
+                agent capable of delivering near-real-time, effective
+                decision-making capabilities.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
-      
-      <!-- Latency Figures -->
-      <div class="row text-center">
-        <div class="col-md-6">
-          <h4>Decision Making Latency (32.8X faster)</h4>
-          <img src="assets/images/decision-making_latency-crop.png" alt="MobileAgentBench" class="img-fluid">
-        </div>
-        <div class="col-md-6">
-          <h4>Step-wise Latency (6.8X faster)</h4>
-          <img src="assets/images/step_wise_latency-crop.png" alt="MobileAgentBench" class="img-fluid">
+    </section>
+    <!-- End paper abstract -->
+
+    <!-- Video demo-->
+    <!-- <section class="hero is-small is-light"> -->
+    <section class="hero is-small" id="videoSection">
+      <div class="hero-body">
+        <div class="container">
+          <!-- Paper video. -->
+          <h2 class="title is-3">Video Demos</h2>
+          <div class="content has-text-justified">
+            <p>
+              V-Droid in the following demos is hosted on 2x4090 GPUs, the
+              videos are presented without acceleration.
+            </p>
+          </div>
+
+          <div class="columns is-centered has-text-centered is-vcentered">
+            <div class="column">
+              <div class="video-container">
+                <video class="video" controls autoplay playsinline muted loop>
+                  <source src="./static/videos/Delete.mp4" type="video/mp4" />
+                </video>
+                <p class="video-caption">
+                  Delete the recipes from Broccoli app: Chicken Alfredo Pasta,
+                  Tomato Basil Bruschetta, Grilled Cheese with Tomato and Basil.
+                </p>
+              </div>
+            </div>
+
+            <div class="column">
+              <div class="video-container">
+                <video class="video" controls autoplay playsinline muted loop>
+                  <source src="./static/videos/OpenWifi.mp4" type="video/mp4" />
+                </video>
+                <p class="video-caption">
+                  Open Wi-Fi for me.<br /><br /><br /><br />
+                </p>
+              </div>
+            </div>
+
+            <div class="column">
+              <div class="video-container">
+                <video class="video" controls autoplay playsinline muted loop>
+                  <source src="./static/videos/Send.mp4" type="video/mp4" />
+                </video>
+                <p class="video-caption">
+                  Send a text message to +16597910719 with message: Beauty is in
+                  the eye of the beholder.<br /><br />
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
-  
-  
+    </section>
 
-  <!-- Citation Section -->
-<section id="citation" class="py-5 bg-dark text-white">
-    <div class="container">
-      <h2 class="text-center mb-4 section-title">Citation</h2>
-      <pre class="citation-block mx-auto" style="max-width: 1500px; background-color: #2a2a2a; padding: 15px; border-radius: 5px; overflow-x: auto; color: #fff;">
-  @article{dai2025advancing,
-    title={Advancing Mobile GUI Agents: A Verifier-Driven Approach to Practical Deployment},
-    author={Dai, Gaole and Jiang, Shiqi and Cao, Ting and Li, Yuanchun and Yang, Yuqing and Tan, Rui and Li, Mo and Qiu, Lili},
-    journal={arXiv preprint arXiv:2503.15937},
-    year={2025}
-  }
-      </pre>
-    </div>
-  </section>
+    <!-- End Video demo -->
 
+    <!-- Adjust the height of the video demo to fit the component block. -->
+    <script>
+      // Get the <section> element and <video> elements
+      const section = document.getElementById("videoSection");
+      const videos = document.querySelectorAll(".video");
 
-  <!-- Footer -->
-  <footer class="py-3 bg-dark text-center text-white">
-    <div class="container">
-      <p class="m-0">
-        &copy; 2025 V-Droid. All rights reserved.
-      </p>
-    </div>
-  </footer>
+      // Listen for window resize events to dynamically adjust video height
+      function adjustVideoHeight() {
+        const sectionHeight = section.clientHeight; // Get the height of the <section> element
 
-  <!-- jQuery and Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"
-  ></script>
+        // Set the video height to match the <section> height
+        videos.forEach((video) => {
+          video.style.height = sectionHeight * 0.7 + "px";
+        });
+      }
 
-  <!-- Canvas Animation Script -->
-  <script>
-    const canvas = document.getElementById('backgroundCanvas');
-    const ctx = canvas.getContext('2d');
+      // Adjust video height on page load and window resize
+      window.addEventListener("load", adjustVideoHeight);
+      window.addEventListener("resize", adjustVideoHeight);
+    </script>
+    <!-- End Adjust -->
 
-    function resizeCanvas() {
-      canvas.width = window.innerWidth;
-      canvas.height = window.innerHeight;
-    }
-    window.addEventListener('resize', resizeCanvas);
-    resizeCanvas();
+    <section class="hero is-small is-light">
+      <div class="hero-body">
+        <div class="container">
+          <!-- Paper video. -->
+          <h2 class="title is-3">Experiment Results</h2>
+          <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths">
+              <img
+                src="./static/images/acc_latency_android_world-crop.png"
+                alt="MY ALT TEXT"
+              />
+              <h2 class="subtitle has-text-justified">
+                Task success rate and decision making latency per step of
+                current SOTA mobile agents 1and V-Droid evaluated on
+                AndroidWorld benchmark. The latency of 2B, 7B and 8B agents are
+                measured on 2× Nvidia 4090. For 72B or MoE agents, the latency
+                is measure on 4× Nvidia A100 80G.
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    let hue = 0;
-    function animate() {
-      hue += 0.3;
-      // Create a radial gradient that shifts color over time
-      const gradient = ctx.createRadialGradient(
-        canvas.width / 2, 
-        canvas.height / 2, 
-        0, 
-        canvas.width / 2, 
-        canvas.height / 2, 
-        canvas.width
-      );
-      gradient.addColorStop(0, `hsl(${hue % 360}, 80%, 50%)`);
-      gradient.addColorStop(1, `hsl(${(hue + 60) % 360}, 80%, 50%)`);
+    <!--BibTex citation -->
+    <section class="section" id="BibTeX">
+      <div class="container is-max-desktop content">
+        <h2 class="title">BibTeX</h2>
+        <pre><code>@article{dai2025advancingmobileguiagents,
+      title={Advancing Mobile GUI Agents: A Verifier-Driven Approach to Practical Deployment}, 
+      author={Gaole Dai and Shiqi Jiang and Ting Cao and Yuanchun Li and Yuqing Yang and Rui Tan and Mo Li and Lili Qiu},
+      year={2025},
+      eprint={2503.15937},
+      archivePrefix={arXiv},
+      primaryClass={cs.AI},
+      url={https://arxiv.org/abs/2503.15937}, 
+}</code></pre>
+      </div>
+    </section>
+    <!--End BibTex citation -->
 
-      ctx.fillStyle = gradient;
-      ctx.fillRect(0, 0, canvas.width, canvas.height);
+    <footer class="footer">
+      <div class="container">
+        <div class="columns is-centered">
+          <div class="column is-8">
+            <div class="content">
+              <p>
+                This page was built using the
+                <a
+                  href="https://github.com/eliahuhorwitz/Academic-project-page-template"
+                  target="_blank"
+                  >Academic Project Page Template</a
+                >
+                which was adopted from the <a
+                  href="https://nerfies.github.io"
+                  target="_blank"
+                  >Nerfies</a
+                > project page. You are free to borrow the source code of this
+                website, we just ask that you link back to this page in the
+                footer. <br />
+                This website is licensed under a
+                <a
+                  rel="license"
+                  href="http://creativecommons.org/licenses/by-sa/4.0/"
+                  target="_blank"
+                  >Creative Commons Attribution-ShareAlike 4.0 International
+                  License</a
+                >.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
 
-      requestAnimationFrame(animate);
-    }
-    animate();
-  </script>
-</body>
+    <!-- Statcounter tracking code -->
+
+    <!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+  </body>
 </html>
