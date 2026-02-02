@@ -6,6 +6,11 @@ body {
     margin: 0;
     padding: 0;
   }
+
+  .publication-venue {
+      margin-top: 0.5rem;
+      color: #555;
+    }
   
   .navbar-brand .brand-text {
     font-weight: 600;
