@@ -8,14 +8,16 @@ body {
   }
 
 .publication-venue {
-  display: block;        /* ← IMPORTANT */
-  width: 100%;           /* ← IMPORTANT */
-  text-align: center;
-
+  display: block !important;
+  width: 100% !important;
+  text-align: center !important;
+  
+  /* Matches the look in your image */
   font-style: normal;
-  margin-top: -0.75rem;
-  margin-bottom: 1.5rem;
-  color: #555;
+  font-size: 1.25rem; 
+  margin-top: -0.5rem;   /* Pulls it slightly closer to the main title */
+  margin-bottom: 2rem;   /* Adds space before the authors */
+  color: #5a5a5a;        /* Professional grey */
   font-weight: 500;
 }
 
