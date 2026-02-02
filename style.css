@@ -7,7 +7,7 @@ body {
     padding: 0;
   }
 
-.publication-venue {
+/* .publication-venue {
   display: block !important;  /* Forces the element to take a full row */
   width: 100% !important;     /* Ensures it spans the entire container width */
   text-align: center;         /* Aligns text within that 100% width */
@@ -18,7 +18,7 @@ body {
   margin-bottom: 1.5rem;      /* Creates breathing room before authors */
   color: #a0a0a0;             /* Changed to a lighter grey to match your image */
   font-weight: 500;
-}
+} */
 
   
   .navbar-brand .brand-text {
