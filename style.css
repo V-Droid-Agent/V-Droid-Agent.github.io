@@ -6,20 +6,6 @@ body {
     margin: 0;
     padding: 0;
   }
-
-/* .publication-venue {
-  display: block !important;  /* Forces the element to take a full row */
-  width: 100% !important;     /* Ensures it spans the entire container width */
-  text-align: center;         /* Aligns text within that 100% width */
-
-  font-style: normal;
-  font-size: 1.25rem; 
-  margin-top: -0.75rem;       /* Pulls it closer to the main title */
-  margin-bottom: 1.5rem;      /* Creates breathing room before authors */
-  color: #a0a0a0;             /* Changed to a lighter grey to match your image */
-  font-weight: 500;
-} */
-
   
   .navbar-brand .brand-text {
     font-weight: 600;
