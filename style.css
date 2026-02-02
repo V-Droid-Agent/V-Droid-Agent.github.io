@@ -7,14 +7,17 @@ body {
     padding: 0;
   }
 
-  .publication-venue {
-      text-align: center;      /* FIXES centering */
-      font-style: normal;      /* removes italic */
-      margin-top: -0.75rem;    /* pulls closer to title */
-      margin-bottom: 1.5rem;   /* balanced spacing to authors */
-      color: #555;             /* lighter than title */
-      font-weight: 500;
-    }
+.publication-venue {
+  display: block;        /* ← IMPORTANT */
+  width: 100%;           /* ← IMPORTANT */
+  text-align: center;
+
+  font-style: normal;
+  margin-top: -0.75rem;
+  margin-bottom: 1.5rem;
+  color: #555;
+  font-weight: 500;
+}
 
   
   .navbar-brand .brand-text {
