@@ -8,9 +8,14 @@ body {
   }
 
   .publication-venue {
-      margin-top: 0.5rem;
-      color: #555;
+      text-align: center;      /* FIXES centering */
+      font-style: normal;      /* removes italic */
+      margin-top: -0.75rem;    /* pulls closer to title */
+      margin-bottom: 1.5rem;   /* balanced spacing to authors */
+      color: #555;             /* lighter than title */
+      font-weight: 500;
     }
+
   
   .navbar-brand .brand-text {
     font-weight: 600;
